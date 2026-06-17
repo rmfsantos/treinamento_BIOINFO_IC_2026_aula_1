@@ -70,20 +70,37 @@ Arquivo: `scripts/run_fastqc.sh`
 
 ```bash
 #!/usr/bin/env bash
-set -euo pipefail
+# Define o interpretador do script usando o Bash localizado no ambiente do sistema
 
-ENV_NAME="orquideas-qc"
+set -euo pipefail
+# -e: interrompe o script se qualquer comando falhar
+# -u: gera erro se uma variável não definida for usada
+# -o pipefail: falha se qualquer comando em um pipeline falhar
+
 RAW_DIR="data/raw"
+# Diretório onde estão os arquivos FASTQ de entrada
+
 OUT_DIR="results/fastqc"
+# Diretório onde os resultados do FastQC serão armazenados
 
 echo "Criando diretório de saída: ${OUT_DIR}..."
+# Mensagem informando a criação do diretório de saída
+
 mkdir -p "${OUT_DIR}"
+# Cria o diretório de saída; -p evita erro se já existir
 
 echo "Rodando FastQC em todos os arquivos FASTQ de ${RAW_DIR}..."
+# Mensagem indicando início da análise
+
 fastqc "${RAW_DIR}"/*.fastq* -o "${OUT_DIR}"
+# Executa o FastQC em todos os arquivos .fastq, .fq, .fastq.gz etc.
+# dentro do diretório RAW_DIR, salvando os resultados em OUT_DIR
 
 echo "Análise FastQC concluída."
+# Mensagem indicando término da execução
+
 echo "Relatórios salvos em: ${OUT_DIR}"
+# Informa onde os relatórios foram salvos
 ```
 
 Esse padrão de script segue o uso típico do FastQC em lote sobre múltiplos arquivos FASTQ.
