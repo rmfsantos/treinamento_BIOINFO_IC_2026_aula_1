@@ -49,6 +49,9 @@ Os arquivos de entrada devem ser colocados em:
 ```text
 data/raw/
 ```
+Baixar em: amostra1 = https://trace.ncbi.nlm.nih.gov/Traces/?run=SRR8175630 
+           amostra2 = https://trace.ncbi.nlm.nih.gov/Traces/?run=SRR8175637
+           amostra3 = https://trace.ncbi.nlm.nih.gov/Traces/?run=SRR8175650
 
 Exemplo de arquivos:
 
