@@ -1,4 +1,4 @@
-# Projeto de QC com FastQC e MultiQC
+# Treinamento_IC_Aula1_QC com FastQC e MultiQC
 
 Este projeto foi criado para analisar a qualidade de arquivos FASTQ usando as ferramentas **FastQC** e **MultiQC**.
 
@@ -11,7 +11,7 @@ Neste projeto, o aluno vai:
 - Rodar o MultiQC para juntar todos os relatórios em um único arquivo.
 - Aprender a documentar o projeto com um README.
 
-## Estrutura do projeto
+## Estrutura do projeto pasta raiz: treinamento_orchid_qc
 
 ```text
 data/raw/          # arquivos FASTQ de entrada
