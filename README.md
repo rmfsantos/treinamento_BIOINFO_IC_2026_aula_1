@@ -27,11 +27,8 @@ README.md          # documentação do projeto
 
 Antes de começar, é preciso ter instalado: (se virar, usar a IA para ajudar)
 
-- Crhome
-- Libre office
 - VS Code
 - Conda
-- Git (opcional, mas recomendado)
 
 ## Como criar o ambiente
 
