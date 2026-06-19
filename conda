@@ -1,23 +1,6 @@
-bash
-cat << 'EOF' > ~/.condarc
-channels:
-  - defaults
-show_channel_urls: true
-
-proxy_servers:
-  http:  http://proxy.uefs.br:3128
-  https: http://proxy.uefs.br:3128
-
-ssl_verify: true
-EOF
 
 
-
-bash
-conda clean -i
-conda create --name orchid_qc python=3.11
-
-
+conda update -n base -c defaults conda
 
 conda config --add channels defaults
 conda config --add channels conda-forge
